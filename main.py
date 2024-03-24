@@ -47,11 +47,11 @@ while True:
 
         # Add the text if a person is present
         if name in known_face_names:
-            font = cv2.FONT_HERSHEY_SIMPLEX
-            bottomLeftCornerOfText = (10, 100)
+            font = cv2.FONT_HERSHEY_PLAIN
+            bottomLeftCornerOfText = (50, 50)
             fontScale = 1.5
-            fontColor = (255, 0, 0)
-            thickness = 3
+            fontColor = (255, 255, 255)
+            thickness = 2
             lineType = 2
             cv2.putText(frame, name + " Present", bottomLeftCornerOfText, font, fontScale, fontColor, thickness,
                         lineType)
